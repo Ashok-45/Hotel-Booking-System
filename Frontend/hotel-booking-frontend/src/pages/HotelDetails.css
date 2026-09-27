@@ -255,3 +255,20 @@
   }
 
 }
+
+.view-map-btn {
+    border: none;
+    background: #16a34a;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.view-map-btn:hover {
+    background: #15803d;
+    transform: translateY(-1px);
+}

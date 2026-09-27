@@ -11,6 +11,19 @@ function HotelDetails() {
     const [hotel, setHotel] = useState(null);
     const [loading, setLoading] = useState(true);
 
+    const handleViewMap = () => {
+
+    const mapQuery =
+        encodeURIComponent(
+            `${hotel.name}, ${hotel.location}`
+        );
+
+    window.open(
+        `https://www.google.com/maps/search/?api=1&query=${mapQuery}`,
+        "_blank"
+    );
+}; 
+
     useEffect(() => {
 
         axios
@@ -180,6 +193,13 @@ function HotelDetails() {
                     >
                         Book Now
                     </button>
+
+                    <button
+    className="view-map-btn"
+    onClick={handleViewMap}
+>
+    📍 View on Map
+</button>
 
                 </div>
 
