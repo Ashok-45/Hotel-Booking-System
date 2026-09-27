@@ -1,0 +1,486 @@
+/* =====================================================
+   EVENT BOOKING PAGE
+===================================================== */
+
+.event-booking-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    color: #111827;
+    padding-bottom: 60px;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.event-booking-header {
+    position: relative;
+
+    text-align: center;
+
+    padding: 45px 20px 50px;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a
+    );
+
+    color: white;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.event-booking-header h1 {
+    margin: 15px 0 8px;
+
+    font-size: 36px;
+
+    color: white;
+}
+
+.event-booking-header p {
+    margin: 0;
+
+    font-size: 20px;
+
+    color: #dbeafe;
+}
+
+
+.event-back-btn {
+    position: absolute;
+
+    left: 30px;
+    top: 30px;
+
+    padding: 10px 17px;
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.4);
+
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+.event-back-btn:hover {
+    background: white;
+
+    color: #1e3a8a;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.event-booking-container {
+    max-width: 1000px;
+
+    margin: 35px auto;
+
+    padding: 0 20px;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   EVENT SUMMARY
+===================================================== */
+
+.event-booking-summary {
+    display: flex;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    margin-bottom: 22px;
+
+    box-shadow:
+        0 7px 22px rgba(0, 0, 0, 0.06);
+}
+
+
+.event-booking-image {
+    width: 300px;
+
+    min-height: 210px;
+
+    background: #dbeafe;
+}
+
+
+.event-booking-image img {
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 210px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.event-booking-summary-content {
+    padding: 28px;
+
+    flex: 1;
+}
+
+
+.event-booking-summary-content h2 {
+    margin: 0 0 18px;
+
+    font-size: 26px;
+}
+
+
+.event-booking-summary-content p {
+    margin: 9px 0;
+
+    color: #64748b;
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   BOOKING CARDS
+===================================================== */
+
+.event-booking-card {
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    padding: 28px;
+
+    margin-bottom: 22px;
+
+    box-shadow:
+        0 7px 22px rgba(0, 0, 0, 0.05);
+}
+
+
+.event-booking-card h2 {
+    margin: 0 0 20px;
+
+    font-size: 24px;
+}
+
+
+.event-section-note {
+    color: #6b7280;
+
+    margin-top: -10px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.event-form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+.event-form-grid > div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.event-form-grid label {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #374151;
+}
+
+
+.event-form-grid input,
+.event-form-grid select {
+    width: 100%;
+
+    height: 46px;
+
+    padding: 0 13px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+    background: white;
+}
+
+
+.event-form-grid input:focus,
+.event-form-grid select:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(37, 99, 235, 0.12);
+}
+
+
+/* =====================================================
+   PAYMENT
+===================================================== */
+
+.event-payment-options {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+.event-payment-option {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 18px;
+
+    border: 2px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.event-payment-option:hover {
+    border-color: #93c5fd;
+
+    background: #f8fbff;
+}
+
+
+.event-payment-option.selected {
+    border-color: #2563eb;
+
+    background: #eff6ff;
+}
+
+
+.event-payment-option input {
+    margin-top: 3px;
+
+    width: 18px;
+
+    height: 18px;
+}
+
+
+.event-payment-option strong {
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+.event-payment-option span {
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   BILLING
+===================================================== */
+
+.event-billing-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 17px 0;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    color: #374151;
+}
+
+
+.event-billing-row span:last-child {
+    font-weight: 600;
+
+    color: #111827;
+}
+
+
+.event-billing-total {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-top: 23px;
+}
+
+
+.event-billing-total span {
+    font-size: 21px;
+
+    font-weight: 600;
+}
+
+
+.event-billing-total strong {
+    font-size: 26px;
+
+    color: #2563eb;
+}
+
+
+/* =====================================================
+   CONFIRM BUTTON
+===================================================== */
+
+.event-confirm-btn {
+    width: 100%;
+
+    height: 54px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.event-confirm-btn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+
+.event-security-note {
+    text-align: center;
+
+    color: #6b7280;
+
+    margin-top: 17px;
+}
+
+
+/* =====================================================
+   LOADING / MESSAGE
+===================================================== */
+
+.event-booking-message {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    background: #f5f7fb;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 750px) {
+
+    .event-booking-header {
+        padding-top: 80px;
+    }
+
+    .event-booking-header h1 {
+        font-size: 28px;
+    }
+
+    .event-back-btn {
+        top: 20px;
+        left: 20px;
+    }
+
+    .event-booking-summary {
+        flex-direction: column;
+    }
+
+    .event-booking-image {
+        width: 100%;
+        height: 220px;
+    }
+
+    .event-booking-image img {
+        min-height: 220px;
+    }
+
+    .event-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-payment-options {
+        grid-template-columns: 1fr;
+    }
+}

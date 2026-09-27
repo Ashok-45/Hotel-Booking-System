@@ -1,0 +1,545 @@
+/* ==========================================
+   MAIN PAGE
+========================================== */
+
+.booking-details-page {
+    min-height: 100vh;
+    background: #f4f7fb;
+    padding-bottom: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.booking-details-header {
+    position: relative;
+    background: white;
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7%;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.booking-details-header h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #111827;
+    font-weight: 700;
+}
+
+.booking-details-back {
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: 1px solid #d1d5db;
+    background: white;
+    color: #374151;
+
+    padding: 10px 16px;
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.booking-details-back:hover {
+    background: #f3f4f6;
+    border-color: #9ca3af;
+}
+
+
+/* ==========================================
+   MAIN CONTAINER
+========================================== */
+
+.booking-details-container {
+    width: 90%;
+    max-width: 900px;
+
+    margin: 35px auto 0;
+
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   BOOKING TOP
+========================================== */
+
+.booking-details-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.booking-details-label {
+    margin: 0 0 6px;
+
+    color: #6b7280;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.booking-details-top h2 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.details-status {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 9px 16px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.details-status.confirmed {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.details-status.cancelled {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+
+/* ==========================================
+   SECTIONS
+========================================== */
+
+.details-section {
+    padding: 28px 0;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.details-section h3 {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin: 0 0 22px;
+
+    color: #1f2937;
+
+    font-size: 19px;
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   DETAILS GRID
+========================================== */
+
+.details-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+/* ==========================================
+   DETAIL ITEM
+========================================== */
+
+.detail-item {
+    background: #f8fafc;
+
+    border: 1px solid #eef0f3;
+
+    border-radius: 9px;
+
+    padding: 15px 17px;
+
+    min-height: 62px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+.detail-item small {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #6b7280;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.detail-item strong {
+    display: block;
+
+    color: #111827;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    word-break: break-word;
+}
+
+
+/* ==========================================
+   TOTAL
+========================================== */
+
+.details-total {
+    margin-top: 22px;
+
+    padding: 18px 20px;
+
+    background: #eff6ff;
+
+    border: 1px solid #dbeafe;
+
+    border-radius: 9px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details-total span {
+    color: #374151;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.details-total strong {
+    color: #2563eb;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   QR CODE SECTION
+========================================== */
+
+.booking-qr-section {
+    padding: 30px 0;
+
+    text-align: center;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.booking-qr-section h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    margin: 0 0 20px;
+
+    color: #1f2937;
+
+    font-size: 19px;
+}
+
+.booking-qr-image {
+    display: block;
+
+    width: 220px;
+    height: 220px;
+
+    padding: 12px;
+
+    margin: 0 auto 15px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+}
+
+.booking-qr-section p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   ACTION BUTTONS
+========================================== */
+
+.booking-details-actions {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-top: 28px;
+}
+
+.download-pdf-button,
+.back-bookings-button {
+    min-width: 190px;
+
+    padding: 13px 20px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+/* DOWNLOAD */
+
+.download-pdf-button {
+    border: none;
+
+    background: #2563eb;
+    color: white;
+}
+
+.download-pdf-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* BACK */
+
+.back-bookings-button {
+    border: 1px solid #d1d5db;
+
+    background: white;
+
+    color: #374151;
+}
+
+.back-bookings-button:hover {
+    background: #f3f4f6;
+}
+
+
+/* ==========================================
+   LOADING
+========================================== */
+
+.booking-details-loading {
+    width: 90%;
+    max-width: 600px;
+
+    margin: 100px auto;
+
+    padding: 50px;
+
+    background: white;
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+.booking-details-loading h2 {
+    margin: 0;
+
+    color: #374151;
+
+    font-size: 20px;
+}
+
+
+/* ==========================================
+   NOT FOUND
+========================================== */
+
+.booking-details-not-found {
+    width: 90%;
+    max-width: 600px;
+
+    margin: 100px auto;
+
+    padding: 50px;
+
+    background: white;
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    box-sizing: border-box;
+}
+
+.booking-details-not-found h2 {
+    margin: 0 0 20px;
+
+    color: #374151;
+}
+
+.booking-details-not-found button {
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 7px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.booking-details-not-found button:hover {
+    background: #1d4ed8;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .booking-details-header {
+        min-height: 120px;
+
+        padding: 55px 20px 20px;
+    }
+
+    .booking-details-header h1 {
+        font-size: 25px;
+    }
+
+    .booking-details-back {
+        left: 20px;
+        top: 15px;
+
+        transform: none;
+    }
+
+    .booking-details-container {
+        width: 92%;
+
+        margin-top: 20px;
+
+        padding: 22px;
+    }
+
+    .booking-details-top {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-details-actions {
+        flex-direction: column;
+    }
+
+    .download-pdf-button,
+    .back-bookings-button {
+        width: 100%;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 420px) {
+
+    .booking-details-container {
+        width: 94%;
+
+        padding: 18px;
+    }
+
+    .booking-details-top h2 {
+        font-size: 20px;
+    }
+
+    .details-section h3 {
+        font-size: 17px;
+    }
+
+    .booking-qr-image {
+        width: 190px;
+        height: 190px;
+    }
+
+}

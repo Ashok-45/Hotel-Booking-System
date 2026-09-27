@@ -1,0 +1,982 @@
+/* =========================================
+   PROFILE PAGE
+========================================= */
+
+.profile-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 40px 6%;
+    box-sizing: border-box;
+    color: #111827;
+}
+
+
+/* =========================================
+   PROFILE HEADER
+========================================= */
+
+.profile-header {
+    max-width: 1200px;
+    margin: 0 auto 35px;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    background: #ffffff;
+
+    padding: 28px 35px;
+
+    border-radius: 18px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+/* Home Button */
+
+.profile-back {
+    border: 1px solid #d1d5db;
+
+    background: #ffffff;
+
+    color: #2563eb;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+    white-space: nowrap;
+}
+
+.profile-back:hover {
+    background: #eff6ff;
+
+    border-color: #2563eb;
+
+    transform: translateY(-1px);
+}
+
+
+/* Header Title */
+
+.profile-header h1 {
+    margin: 0;
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    color: #111827;
+}
+
+
+/* =========================================
+   MAIN PROFILE CARD
+========================================= */
+
+.profile-card {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    border: 1px solid #e5e7eb;
+
+    padding: 35px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================
+   AVATAR
+========================================= */
+
+.profile-avatar {
+    width: 100px;
+
+    height: 100px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 42px;
+
+    font-weight: 600;
+
+    margin: 0 auto 15px;
+}
+
+
+/* =========================================
+   USER NAME
+========================================= */
+
+.profile-card > h2 {
+    margin: 0;
+
+    text-align: center;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #111827;
+}
+
+
+/* User Role */
+
+.profile-role {
+    margin: 7px 0 30px;
+
+    text-align: center;
+
+    font-size: 15px;
+
+    color: #6b7280;
+}
+
+
+/* =========================================
+   USER DETAILS
+========================================= */
+
+.profile-details {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 35px;
+}
+
+
+.profile-detail {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+    min-width: 0;
+}
+
+
+/* Icons */
+
+.profile-detail > span {
+    width: 45px;
+
+    height: 45px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eff6ff;
+
+    border-radius: 10px;
+
+    font-size: 21px;
+}
+
+
+/* Detail Text */
+
+.profile-detail > div {
+    min-width: 0;
+}
+
+
+.profile-detail small {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #6b7280;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+}
+
+
+.profile-detail strong {
+    display: block;
+
+    color: #111827;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    word-break: break-word;
+}
+
+
+/* =========================================
+   MY BOOKINGS SECTION
+========================================= */
+
+.profile-section {
+    margin-top: 10px;
+}
+
+
+.profile-section > h3 {
+    margin: 0 0 20px;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    color: #111827;
+
+    padding-bottom: 12px;
+
+    border-bottom: 2px solid #e5e7eb;
+}
+
+
+/* =========================================
+   BOOKINGS LIST
+========================================= */
+
+.bookings-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   BOOKING CARD
+========================================= */
+
+.booking-card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    padding: 25px 28px;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+
+    transition: 0.2s ease;
+}
+
+
+.booking-card:hover {
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.09);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   BOOKING HEADER
+========================================= */
+
+.booking-card-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.booking-card-header h4 {
+    margin: 0;
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+    color: #111827;
+}
+
+
+/* =========================================
+   BOOKING STATUS
+========================================= */
+
+.booking-status {
+    padding: 9px 16px;
+
+    border-radius: 20px;
+
+    background: #dcfce7;
+
+    color: #15803d;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   BOOKING INFORMATION GRID
+========================================= */
+
+.booking-info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+}
+
+
+.booking-info-grid > div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    min-width: 0;
+}
+
+
+.booking-info-grid small {
+    color: #6b7280;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+}
+
+
+.booking-info-grid strong {
+    color: #111827;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    word-break: break-word;
+}
+
+
+/* =========================================
+   BOOKING FOOTER
+========================================= */
+
+.booking-card-footer {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 20px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+
+.booking-card-footer span {
+    color: #6b7280;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+.booking-card-footer strong {
+    color: #2563eb;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   NO BOOKINGS
+========================================= */
+
+.no-bookings {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    padding: 55px 25px;
+
+    text-align: center;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+.no-bookings > div {
+    font-size: 45px;
+
+    margin-bottom: 12px;
+}
+
+
+.no-bookings p {
+    margin: 0 0 8px;
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+    color: #111827;
+}
+
+
+.no-bookings span {
+    display: block;
+
+    margin-bottom: 22px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+.no-bookings button {
+    border: none;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    padding: 12px 22px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.no-bookings button:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   LOGOUT BUTTON
+========================================= */
+
+.logout-button {
+    display: block;
+
+    margin: 35px auto 5px;
+
+    border: none;
+
+    background: #ef4444;
+
+    color: #ffffff;
+
+    padding: 12px 30px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.logout-button:hover {
+    background: #dc2626;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .profile-page {
+        padding: 30px 4%;
+    }
+
+
+    .profile-header {
+        padding: 25px;
+    }
+
+
+    .profile-header h1 {
+        font-size: 34px;
+    }
+
+
+    .profile-card {
+        padding: 28px;
+    }
+
+
+    .profile-details {
+        grid-template-columns: 1fr;
+    }
+
+
+    .booking-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .profile-page {
+        padding: 20px 12px;
+    }
+
+
+    .profile-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+
+        padding: 22px;
+    }
+
+
+    .profile-header h1 {
+        font-size: 30px;
+    }
+
+
+    .profile-card {
+        padding: 20px;
+    }
+
+
+    .profile-avatar {
+        width: 85px;
+
+        height: 85px;
+
+        font-size: 36px;
+    }
+
+
+    .profile-card > h2 {
+        font-size: 24px;
+    }
+
+
+    .profile-details {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .profile-detail {
+        padding: 15px;
+    }
+
+
+    .profile-section > h3 {
+        font-size: 22px;
+    }
+
+
+    .booking-card {
+        padding: 20px;
+    }
+
+
+    .booking-card-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .booking-status {
+        align-self: flex-start;
+    }
+
+
+    .booking-info-grid {
+        grid-template-columns: 1fr;
+
+        padding: 15px;
+    }
+
+
+    .booking-card-footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+    }
+
+
+    .logout-button {
+        width: 100%;
+    }
+}
+
+/* =========================================
+   BOOKING ACTION BUTTONS
+========================================= */
+
+.booking-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.booking-action {
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+    white-space: nowrap;
+}
+
+
+.booking-action:hover {
+    transform: translateY(-1px);
+}
+
+
+/* QR */
+
+.qr-action {
+    background: #ede9fe;
+    color: #6d28d9;
+}
+
+.qr-action:hover {
+    background: #ddd6fe;
+}
+
+
+/* PDF */
+
+.pdf-action {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.pdf-action:hover {
+    background: #bfdbfe;
+}
+
+
+/* Cancel */
+
+.cancel-action {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.cancel-action:hover {
+    background: #fecaca;
+}
+
+
+/* Cancelled status */
+
+.booking-status.cancelled {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+
+/* =========================================
+   QR MODAL
+========================================= */
+
+.qr-modal-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 9999;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+
+.qr-modal {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 420px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    padding: 35px 30px;
+
+    text-align: center;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+
+.qr-modal h2 {
+    margin: 0 0 8px;
+
+    font-size: 24px;
+
+    color: #111827;
+}
+
+
+.qr-modal p {
+    margin: 0 0 22px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+.qr-close-button {
+    position: absolute;
+
+    top: 12px;
+
+    right: 15px;
+
+    width: 35px;
+
+    height: 35px;
+
+    border: none;
+
+    background: #f3f4f6;
+
+    color: #374151;
+
+    border-radius: 50%;
+
+    font-size: 24px;
+
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+
+.qr-close-button:hover {
+    background: #e5e7eb;
+}
+
+
+.profile-qr-image {
+    display: block;
+
+    width: 280px;
+
+    height: 280px;
+
+    max-width: 100%;
+
+    margin: 10px auto 18px;
+}
+
+
+.qr-modal > strong {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #2563eb;
+
+    font-size: 16px;
+}
+
+
+.qr-download-button {
+    border: none;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    padding: 12px 22px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.qr-download-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================
+   RESPONSIVE ACTIONS
+========================================= */
+
+@media (max-width: 900px) {
+
+    .booking-card-footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+    }
+
+    .booking-actions {
+        width: 100%;
+
+        justify-content: flex-start;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .booking-actions {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        width: 100%;
+    }
+
+
+    .booking-action {
+        width: 100%;
+    }
+
+
+    .qr-modal {
+        padding: 30px 20px;
+    }
+
+
+    .profile-qr-image {
+        width: 240px;
+
+        height: 240px;
+    }
+}
+

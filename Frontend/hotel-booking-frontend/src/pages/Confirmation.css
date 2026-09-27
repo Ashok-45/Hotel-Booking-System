@@ -1,0 +1,369 @@
+.confirmation-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding-bottom: 60px;
+}
+
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+.confirmation-header {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.success-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #22c55e;
+
+  border-radius: 50%;
+
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.confirmation-header h1 {
+  margin: 0 0 10px;
+
+  font-size: 34px;
+}
+
+.confirmation-header p {
+  color: #cbd5e1;
+}
+
+
+/* ============================= */
+/* CONTAINER */
+/* ============================= */
+
+.confirmation-container {
+  width: 84%;
+  max-width: 900px;
+
+  margin: 35px auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+
+/* ============================= */
+/* BOOKING ID */
+/* ============================= */
+
+.booking-id-card {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  text-align: center;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.booking-id-card span {
+  display: block;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  margin-bottom: 8px;
+}
+
+.booking-id-card strong {
+  color: #2563eb;
+
+  font-size: 26px;
+
+  letter-spacing: 2px;
+}
+
+
+/* ============================= */
+/* QR */
+/* ============================= */
+
+.qr-section {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 12px;
+
+  text-align: center;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.qr-section h2 {
+  margin-top: 0;
+
+  color: #0f172a;
+}
+
+.qr-section p {
+  color: #64748b;
+}
+
+.qr-section canvas {
+  margin-top: 15px;
+}
+
+
+/* ============================= */
+/* SECTIONS */
+/* ============================= */
+
+.confirmation-section {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.confirmation-section h2 {
+  margin-top: 0;
+
+  margin-bottom: 25px;
+
+  color: #0f172a;
+
+  font-size: 22px;
+}
+
+
+/* ============================= */
+/* DETAIL GRID */
+/* ============================= */
+
+.detail-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 25px;
+}
+
+.detail-grid span {
+  display: block;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  margin-bottom: 6px;
+}
+
+.detail-grid strong {
+  color: #0f172a;
+
+  font-size: 16px;
+}
+
+
+/* ============================= */
+/* PRIMARY GUEST */
+/* ============================= */
+
+.guest-info p {
+  color: #334155;
+
+  margin: 12px 0;
+}
+
+
+/* ============================= */
+/* GUESTS */
+/* ============================= */
+
+.confirmed-guests {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.confirmed-guest {
+  display: grid;
+
+  grid-template-columns:
+    120px
+    1fr
+    120px
+    140px;
+
+  gap: 15px;
+
+  align-items: center;
+
+  padding: 15px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 8px;
+}
+
+.confirmed-guest strong {
+  color: #2563eb;
+}
+
+.confirmed-guest span {
+  color: #334155;
+}
+
+
+/* ============================= */
+/* BILLING */
+/* ============================= */
+
+.billing-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 13px 0;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  color: #334155;
+}
+
+.billing-total {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 20px;
+
+  font-size: 22px;
+}
+
+.billing-total strong {
+  color: #2563eb;
+}
+
+
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
+
+.download-pdf-button {
+  width: 100%;
+
+  padding: 16px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.download-pdf-button:hover {
+  background: #1d4ed8;
+}
+
+
+.home-button {
+  width: 100%;
+
+  padding: 14px;
+
+  border: 1px solid #2563eb;
+
+  border-radius: 8px;
+
+  background: white;
+
+  color: #2563eb;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background: #eff6ff;
+}
+
+
+/* ============================= */
+/* NOT FOUND */
+/* ============================= */
+
+.confirmation-not-found {
+  text-align: center;
+
+  padding: 100px 20px;
+}
+
+.confirmation-not-found button {
+  padding: 12px 25px;
+
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 700px) {
+
+  .confirmation-container {
+    width: 94%;
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .confirmed-guest {
+    grid-template-columns: 1fr;
+  }
+
+  .confirmation-header h1 {
+    font-size: 28px;
+  }
+
+}
